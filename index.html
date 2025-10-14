@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimsouheng Ngov | CS Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    />
+  </head>
+
+  <body
+    class="bg-gray-50 text-gray-900 dark:bg-primary-dark dark:text-text-light font-sans antialiased relative"
+  >
+    <div
+      id="gradient-bg"
+      class="hidden lg:block fixed inset-0 h-full w-full -z-10 opacity-70 dark:opacity-50 transition-opacity duration-1000"
+    ></div>
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg dark:bg-primary-dark/95"
+    >
+      <nav
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+      >
+        <a
+          href="#hero"
+          class="text-2xl font-bold text-accent hover:text-accent-light transition duration-300"
+        >
+          KIMSOUHENG NGOV | CS
+        </a>
+        <div
+          class="hidden align-center justify-center md:flex items-center space-x-8 text-lg font-medium"
+        >
+          <a href="#skills" class="nav-link text-gray-700 dark:text-text-light"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="nav-link text-gray-700 dark:text-text-light"
+            >Projects</a
+          >
+          <a
+            href="#achievements"
+            class="nav-link text-gray-700 dark:text-text-light"
+            >Achievements</a
+          >
+          <a href="#contact" class="nav-link text-gray-700 dark:text-text-light"
+            >Contact</a
+          >
+          <button
+            id="toggleTheme"
+            type="button"
+            class="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent dark:bg-accent/80 hover:bg-accent-light shadow-sm outline-none ring-0 transition-colors duration-500"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="absolute h-7 w-7 text-white transition-all duration-300 ease-out opacity-100 scale-100 rotate-0 dark:opacity-0 dark:scale-75 dark:rotate-90"
+              viewBox="0 -960 960 960"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z"
+              />
+            </svg>
+
+            <svg
+              class="absolute h-7 w-7 text-white transition-all duration-300 ease-out opacity-0 scale-75 rotate-90 dark:opacity-100 dark:scale-100 dark:rotate-0"
+              viewBox="0 -960 960 960"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <button
+          id="menu-toggle"
+          class="md:hidden p-2 rounded-lg text-gray-900 dark:text-text-light hover:bg-gray-200 dark:hover:bg-secondary-dark transition duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-gray-100 dark:bg-secondary-dark rounded-b-lg"
+      >
+        <a
+          href="#skills"
+          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light border-b border-gray-300 dark:border-primary-dark/50"
+          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+          >Skills</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light border-b border-gray-300 dark:border-primary-dark/50"
+          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+          >Projects</a
+        >
+        <a
+          href="#achievements"
+          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light border-b border-gray-300 dark:border-primary-dark/50"
+          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+          >Achievements</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light"
+          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-36 text-center"
+      >
+        <div class="max-w-4xl mx-auto">
+          <p class="text-xl text-accent font-semibold mb-3">
+            Hello, I'm Kimsouheng Ngov
+          </p>
+          <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+            <span class="text-gray-900 dark:text-text-light"></span>
+            <span id="typing-text" class="text-accent-light"></span>
+          </h1>
+          <p
+            class="text-xl md:text-2xl text-gray-600 dark:text-text-muted-dark mb-10 max-w-2xl mx-auto"
+          >
+            A Third-Year Computer Science student at **Norton University**
+            focused on building reliable software solutions and engaging user
+            experiences. I leverage **Figma**, **C++**, and modern front-end
+            frameworks.
+          </p>
+          <div class="flex justify-center space-x-6 mb-10">
+            <a
+              href="#"
+              class="text-3xl text-gray-500 dark:text-text-muted-dark hover:text-accent transition duration-300 transform hover:scale-110"
+              title="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-3xl text-gray-500 dark:text-text-muted-dark hover:text-accent transition duration-300 transform hover:scale-110"
+              title="GitHub"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3-1 6-2.2 6-5.5.08-1.7-.2-3.4-1.3-4.9.22-.76.31-1.44 0-2-2.7.35-4.3 1.25-5.3.7-.6-1-1.2-2.5-1.4-3.5h-2c-.2.5-1 2-1.4 3.5-1 .5-2.6-.35-5.3-.7-.36.56-.63 1.24-.6 2-.11.45-.48 1.07-.36 1.77-1.1 1.5-1.4 3.2-1.3 4.9 0 3.3 3 4.5 6 5.5-.39.49-.68 1.05-.75 1.7-1.45.64-2.8 1-3.8 1-.5 0-1.5.2-1.7.5-.15.36-.58.5-1 .5H3"
+                />
+                <path
+                  d="M12 21.5c-4 0-8-3-8-8 0-4 4-8 8-8s8 4 8 8c0 5-4 8-8 8z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-3xl text-gray-500 dark:text-text-muted-dark hover:text-accent transition duration-300 transform hover:scale-110"
+              title="TikTok/Other Link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-link"
+              >
+                <path
+                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                />
+              </svg>
+            </a>
+          </div>
+          <a
+            href="#projects"
+            class="inline-block px-8 py-4 bg-accent hover:bg-accent-light text-text-light font-bold text-lg rounded-xl shadow-lg transform transition duration-300 hover:scale-[1.03]"
+          >
+            View My Featured Work
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="py-20 bg-gray-100 dark:bg-secondary-dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl container font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 inline-block mx-auto text-gray-900 dark:text-text-light"
+          >
+            Technical Skills
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div
+              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl dark:shadow-2xl border border-accent/30"
+            >
+              <h3 class="text-2xl font-semibold mb-4 text-accent">
+                Core Development
+              </h3>
+              <div class="flex flex-wrap gap-4">
+                <span
+                  class="skill-tag bg-indigo-100 text-indigo-800 dark:bg-indigo-500/20 dark:text-indigo-300"
+                  >C++</span
+                >
+                <span
+                  class="skill-tag bg-yellow-100 text-yellow-800 dark:bg-yellow-500/20 dark:text-yellow-300"
+                  >JavaScript</span
+                >
+                <span
+                  class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-500/20 dark:text-blue-300"
+                  >HTML5</span
+                >
+                <span
+                  class="skill-tag bg-pink-100 text-pink-800 dark:bg-pink-500/20 dark:text-pink-300"
+                  >CSS3</span
+                >
+                <span
+                  class="skill-tag bg-cyan-100 text-cyan-800 dark:bg-cyan-500/20 dark:text-cyan-300"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="skill-tag bg-purple-100 text-purple-800 dark:bg-purple-500/20 dark:text-purple-300"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl dark:shadow-2xl border border-accent/30"
+            >
+              <h3 class="text-2xl font-semibold mb-4 text-accent">
+                Design & Research Focus
+              </h3>
+              <div class="flex flex-wrap gap-4">
+                <span
+                  class="skill-tag bg-orange-100 text-orange-800 dark:bg-orange-500/20 dark:text-orange-300"
+                  >Figma (Design)</span
+                >
+                <span
+                  class="skill-tag bg-sky-100 text-sky-800 dark:bg-sky-500/20 dark:text-sky-300"
+                  >TypeScript (Research)</span
+                >
+                <span
+                  class="skill-tag bg-green-100 text-green-800 dark:bg-green-500/20 dark:text-green-300"
+                  >React JS (Research)</span
+                >
+                <span
+                  class="skill-tag bg-red-100 text-red-800 dark:bg-red-500/20 dark:text-red-300"
+                  >Java (Research)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl container font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 inline-block mx-auto text-gray-900 dark:text-text-light"
+          >
+            Featured Projects
+          </h2>
+
+          <div
+            class="max-w-3xl mx-auto p-8 bg-white dark:bg-secondary-dark rounded-xl shadow-xl dark:shadow-2xl border border-accent/40 hover:shadow-accent/50 transition duration-300"
+          >
+            <h3 class="text-3xl font-bold text-accent mb-3">
+              Responsive UX/UI Concept Platform
+            </h3>
+            <p class="text-lg text-gray-600 dark:text-text-muted-dark mb-4">
+              A project developed during my course at ISTAD.
+            </p>
+
+            <div class="bg-gray-200 dark:bg-primary-dark p-4 rounded-lg mb-4">
+              <p class="font-medium text-gray-700 dark:text-text-light mb-2">
+                Key Achievement:
+              </p>
+              <p class="text-2xl font-extrabold text-gray-900 dark:text-white">
+                🏆 Top 3 Project at ISTAD
+              </p>
+            </div>
+
+            <p class="text-gray-700 dark:text-text-muted-dark mb-4">
+              This project involved end-to-end development, from initial design
+              concepts in **Figma** to a fully responsive implementation using
+              **HTML, CSS, and JavaScript**. The primary focus was creating an
+              intuitive user experience and demonstrating strong foundational
+              skills in front-end development.
+            </p>
+
+            <div class="flex flex-wrap gap-3 mt-4">
+              <span class="project-tech-tag">HTML5</span>
+              <span class="project-tech-tag">CSS3</span>
+              <span class="project-tech-tag">JavaScript</span>
+              <span class="project-tech-tag">Figma</span>
+            </div>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="#"
+                class="px-6 py-3 bg-accent/90 hover:bg-accent text-text-light font-semibold rounded-lg transition duration-300 shadow-md"
+                >View Demo (Mock Link)</a
+              >
+              <a
+                href="#"
+                class="px-6 py-3 border border-gray-400 dark:border-text-muted-dark text-gray-700 dark:text-text-muted-dark hover:border-accent hover:text-accent font-semibold rounded-lg transition duration-300"
+                >GitHub (Mock Link)</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="achievements"
+        class="py-20 bg-gray-100 dark:bg-secondary-dark"
+      >
+        <div class="container  mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-4xl font-bold container text-center mb-12 border-b-2 border-accent/50 pb-2 inline-block mx-auto text-gray-900 dark:text-text-light"
+          >
+            Academic & Technical Recognition
+          </h2>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div
+              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl flex items-start space-x-4 border-l-4 border-yellow-500"
+            >
+              <span class="text-3xl text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M10 14a3 3 0 100-6 3 3 0 000 6z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 2a8 8 0 100 16 8 8 0 000-16zm-7 8a7 7 0 1114 0 7 7 0 01-14 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <div>
+                <p
+                  class="text-xl font-semibold text-gray-900 dark:text-text-light"
+                >
+                  Best Performance Student
+                </p>
+                <p class="text-gray-600 dark:text-text-muted-dark">
+                  Awarded **Two Certificates** from ISTAD for demonstrating
+                  outstanding commitment and skill execution throughout the
+                  course period.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl flex items-start space-x-4 border-l-4 border-green-500"
+            >
+              <span class="text-3xl text-green-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <div>
+                <p
+                  class="text-xl font-semibold text-gray-900 dark:text-text-light"
+                >
+                  Full Stack Foundation Course Completion
+                </p>
+                <p class="text-gray-600 dark:text-text-muted-dark">
+                  ISTAD Certificate of completion for the comprehensive **HTML,
+                  CSS, and JavaScript** course.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl flex items-start space-x-4 border-l-4 border-red-500"
+            >
+              <span class="text-3xl text-red-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7 6a3 3 0 016 0V7a1 1 0 11-2 0V6a1 1 0 00-2 0v1a1 1 0 11-2 0V6zM5.555 10A18.833 18.833 0 0110 8.5a18.833 18.833 0 014.445 1.5.75.75 0 01-.5 1.35C12.592 10.638 11.3 10 10 10s-2.592.638-3.945 1.35a.75.75 0 01-.5-1.35zM3.468 13.5a19.467 19.467 0 0013.064 0 .75.75 0 01-.5 1.35c-3.134-1.688-6.104-1.92-9.064 0a.75.75 0 01-.5-1.35zM.75 16.5a20.071 20.071 0 0118.5 0 .75.75 0 01-.5 1.35C15.825 16.738 13.067 17 10 17s-5.825-.262-8.25-1.15a.75.75 0 01-.5-1.35z"
+                  />
+                </svg>
+              </span>
+              <div>
+                <p
+                  class="text-xl font-semibold text-gray-900 dark:text-text-light"
+                >
+                  English Language Proficiency
+                </p>
+                <p class="text-gray-600 dark:text-text-muted-dark">
+                  Received **One Medal and One Certificate** from PUC School,
+                  demonstrating strong communication skills crucial for teamwork
+                  and documentation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20">
+        <div
+          class="container  px-4 sm:px-6 lg:px-8 text-center max-w-2xl mx-auto"
+        >
+          <h2
+            class="text-4xl font-bold mb-4 text-gray-900 dark:text-text-light"
+          >
+            Let's Connect & Build
+          </h2>
+          <p class="text-xl text-gray-600 dark:text-text-muted-dark mb-8">
+            I'm currently seeking opportunities for internships and
+            collaborative projects in software development and UI/UX design.
+            Feel free to reach out!
+          </p>
+
+          <a
+            href="mailto:your.email@example.com"
+            class="inline-block px-8 py-4 bg-accent hover:bg-accent-light text-text-light font-bold text-lg rounded-xl shadow-xl transition duration-300 transform hover:translate-y-[-2px] hover:shadow-2xl"
+          >
+            <span class="inline-flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 mr-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8V6a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+                />
+              </svg>
+              Get in Touch
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-gray-200 dark:bg-primary-dark border-t border-gray-300 dark:border-secondary-dark mt-10"
+    >
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-600 dark:text-text-muted-dark text-sm"
+      >
+        <p>&copy; 2025 Kimsouheng Ngov. Built with HTML & Tailwind CSS.</p>
+        <p class="mt-1">
+          Third-Year Computer Science Student | Norton University
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class", // Enable class-based dark mode
+        theme: {
+          extend: {
+            colors: {
+              // Custom Dark Mode Colors (used with dark: prefix)
+              "primary-dark": "#111827", // Dark gray/black background
+              "secondary-dark": "#1F2937", // Slightly lighter card background
+
+              // Custom Light Mode Colors (default, used without prefix)
+              "primary-light": "#FFFFFF",
+              "secondary-light": "#F3F4F6",
+
+              accent: "#4F46E5", // Indigo for highlights
+              "accent-light": "#6366F1",
+              "text-dark": "#1F2937",
+              "text-light": "#F9FAFB",
+              "text-muted-dark": "#D1D5DB", // For dark mode
+              "text-muted-light": "#6B7280", // For light mode
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

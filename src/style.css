@@ -1,0 +1,157 @@
+/* Custom utility classes, hover effects, and keyframes */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----------------------------------- */
+/* 1. ANIMATED BACKGROUND GRADIENT */
+/* ----------------------------------- */
+
+#gradient-bg {
+  /* Default Dark Mode Gradient (Intense colors for contrast) */
+  background: linear-gradient(
+    -45deg,
+    var(--primary-dark), /* #111827 */
+    var(--accent),       /* #4F46E5 */
+    var(--accent-light), /* #6366F1 */
+    var(--secondary-dark), /* #1F2937 */
+    var(--accent)
+  );
+  background-size: 400% 400%; /* Make the gradient much larger than the container */
+  animation: animateGradient 25s ease infinite;
+}
+
+/* Light Mode Override for Gradient (Subtle, light colors) */
+/* The .dark class is on the <html> element, so we use :not(.dark) or a specific class on body */
+.light #gradient-bg {
+  background: linear-gradient(
+    -45deg,
+    #f3f4f6, /* secondary-light */
+    #e5e7eb, 
+    #f3f4f6,
+    #e5e7eb,
+    #f3f4f6
+  );
+  background-size: 400% 400%;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ----------------------------------- */
+/* 2. Portfolio Components Styling */
+/* ----------------------------------- */
+
+/* Navigation Link Hover Effect */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  /* Using the custom 'accent' color value defined in Tailwind config */
+  background-color: #4f46e5; 
+  transition: width 0.3s;
+}
+.nav-link:hover {
+  color: #4f46e5;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Typing cursor blink animation */
+#typing-text::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  font-weight: 300; 
+  opacity: 1;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Skill Tag Styles */
+.skill-tag {
+  padding: 8px 16px;
+  border-radius: 9999px; 
+  font-weight: 600;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.skill-tag:hover {
+  transform: translateY(-2px);
+}
+
+/* Project Tech Tag (manual CSS for the @apply classes) */
+.project-tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0.75rem; 
+  padding-right: 0.75rem; 
+  padding-top: 0.25rem; 
+  padding-bottom: 0.25rem; 
+  background-color: #e5e7eb; /* bg-gray-200 */
+  color: #374151; /* text-gray-700 */
+  font-size: 0.875rem; 
+  font-weight: 500; 
+  border-radius: 9999px; 
+}
+
+.dark .project-tech-tag {
+  background-color: #374151; /* dark:bg-gray-700 */
+  color: #e5e7eb; /* dark:text-gray-200 */
+}
+/* ----------------------------------- */
+/* INFINITE MARQUEE ANIMATION CSS */
+/* ----------------------------------- */
+
+.logo-marquee {
+  /* Position absolute is key to making both tracks overlap */
+  position: absolute;
+  /* Start the animation track off-screen to the right */
+  transform: translateX(0%);
+  animation: scroll-left 40s linear infinite; /* Adjust '40s' to speed up or slow down */
+}
+
+/* Pause animation on hover */
+.logo-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  /* Move the content 50% of its width to the left for a seamless loop */
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

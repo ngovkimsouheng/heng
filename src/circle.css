@@ -1,0 +1,41 @@
+/* ----------------------------------- */
+/* GSAP BASIC STYLING */
+/* ----------------------------------- */
+
+#gsap-orbit-area {
+    /* Define 3D space and center the area */
+    position: relative; 
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#logo-wrapper {
+    /* The logos rotate around the center of this container */
+    transform-origin: center center;
+}
+
+.gsap-logo {
+    /* Base size and position (initially centered before JS moves it) */
+    position: absolute;
+    width: 70px; /* Logo Size */
+    height: 70px;
+    top: calc(50% - 35px); /* Center Vertically */
+    left: calc(50% - 35px); /* Center Horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* KEY: Define the center point for the ORBIT. This is the radius. */
+    /* If the container is 500px wide, radius is 250px. */
+    /* We translate by 250px to set the orbit radius. */
+    transform-origin: 50% 250px; 
+    
+    /* Hide logos initially until GSAP positions them */
+    opacity: 0; 
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
