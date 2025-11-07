@@ -1,1 +1,38 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme {
+  --color-primary: #004EAB;
+  --color-secondary: #FF914D;
+  --color-accent: #FFFFFF;
+  --color-nav: #f1f1f1;
+  --color-background: #B7D8FA;
+  --font-primary: "Poppins", sans-serif;
+  /* --font-Secondary: "Kantumruy Pro", sans-serif; */
+  --color-dark_background: #000235;
+  --color-dark-primary: #3E3E78;
+  --color-dark-secondary: #FDCF18;
+  --color-dark-light-primary: #5858A7;
+
+}
+
+/* --- Text Animation CSS --- */
+.blinking-cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+

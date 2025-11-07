@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const currentTitle = titles[titleIndex];
     // Define typing speed (faster deletion, slower typing)
-    const delay = isDeleting ? 75 : 150;
+    const delay = isDeleting ? 45 : 170;
 
     if (isDeleting) {
       // Deleting character

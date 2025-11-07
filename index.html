@@ -3,561 +3,629 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kimsouheng Ngov | CS Portfolio</title>
+    <title>KIMSOUHENG NGOV - Frontend Developer & Designer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIMSOUHENG NGOV - Frontend Developer & UI/UX Designer</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind.config.js"></script>
+    <meta
+      name="description"
+      content="KIMSOUHENG NGOV: A front-end developer and Figma designer who builds modern and creative web solutions."
+    />
 
-    <link rel="stylesheet" href="./src/output.css" />
+    <meta
+      name="keywords"
+      content="Frontend Developer, UI/UX Designer, HTML, CSS, JavaScript, Tailwind CSS, Vue.js, React.js, Portfolio, KIMSOUHENG NGOV"
+    />
 
-    <link rel="stylesheet" href="src/style.css" />
+    <meta name="author" content="KIMSOUHENG NGOV" />
+
+    <meta
+      name="image"
+      content="[YOUR ABSOLUTE IMAGE URL, e.g., https://yourwebsite.com/img/photo_2025-11-05_19-05-30.jpg]"
+    />
 
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="icon"
+      href="./img/photo_2025-11-05_19-05-30.jpg"
+      sizes="32x32"
+      type="image/png"
     />
+    <link
+      rel="icon"
+      href="./img/photo_2025-11-05_19-05-30.jpg"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./img/photo_2025-11-05_19-05-30.jpg" />
+    <link
+      rel="shortcut icon"
+      href="./img/photo_2025-11-05_19-05-30.jpg"
+      type="image/x-icon"
+    />
+
+    <meta
+      property="og:title"
+      content="KIMSOUHENG NGOV -  Frontend Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="A front-end developer and Figma designer passionate about building beautiful, easy-to-use web applications."
+    />
+    <meta
+      property="og:image"
+      content="[YOUR ABSOLUTE IMAGE URL, e.g., https://yourwebsite.com/img/photo_2025-11-05_19-05-30.jpg]"
+    />
+    <meta
+      property="og:url"
+      content="[YOUR PORTFOLIO LIVE URL, e.g., https://yourwebsite.com]"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="KIMSOUHENG NGOV - Dev & Designer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Checkout my skills in HTML, CSS, JavaScript, Tailwind CSS, and UI/UX design."
+    />
+    <meta
+      name="twitter:image"
+      content="[YOUR ABSOLUTE IMAGE URL, e.g., https://yourwebsite.com/img/photo_2025-11-05_19-05-30.jpg"
+    />
+    <meta
+      name="twitter:site"
+      content="[YOUR TWITTER/X HANDLE, e.g., @yourusername]"
+    />
+
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./src/auto.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script
+      src="https://kit.fontawesome.com/5ce14b4205.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
-
-  <body
-    class="bg-gray-50 text-gray-900 dark:bg-primary-dark dark:text-text-light font-sans antialiased relative"
-  >
-    <div
-      id="gradient-bg"
-      class="hidden lg:block fixed inset-0 h-full w-full -z-10 opacity-70 dark:opacity-50 transition-opacity duration-1000"
-    ></div>
-    <header
-      class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg dark:bg-primary-dark/95"
-    >
-      <nav
-        class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
-      >
+  <body class="bg-gradient-to-r from-background to-[#D8F0FD] font-primary">
+    <header class="sticky z-99 top-4">
+      <nav class="bg-white w-fit p-1 rounded-[14px] mx-auto flex mt-8">
         <a
-          href="#hero"
-          class="text-2xl font-bold text-accent hover:text-accent-light transition duration-300"
+          href="#home"
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[100px]"
         >
-          KIMSOUHENG NGOV | CS
+          <div
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+          >
+            Home
+          </div>
+          <div class="absolute right-2.5">
+            <i class="fa-solid text-[20px] fa-house"></i>
+          </div>
         </a>
-        <div
-          class="hidden align-center justify-center md:flex items-center space-x-8 text-lg font-medium"
-        >
-          <a href="#skills" class="nav-link text-gray-700 dark:text-text-light"
-            >Skills</a
-          >
-          <a
-            href="#projects"
-            class="nav-link text-gray-700 dark:text-text-light"
-            >Projects</a
-          >
-          <a
-            href="#achievements"
-            class="nav-link text-gray-700 dark:text-text-light"
-            >Achievements</a
-          >
-          <a href="#contact" class="nav-link text-gray-700 dark:text-text-light"
-            >Contact</a
-          >
-          <button
-            id="toggleTheme"
-            type="button"
-            class="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-accent dark:bg-accent/80 hover:bg-accent-light shadow-sm outline-none ring-0 transition-colors duration-500"
-            aria-label="Toggle dark mode"
-          >
-            <svg
-              class="absolute h-7 w-7 text-white transition-all duration-300 ease-out opacity-100 scale-100 rotate-0 dark:opacity-0 dark:scale-75 dark:rotate-90"
-              viewBox="0 -960 960 960"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z"
-              />
-            </svg>
-
-            <svg
-              class="absolute h-7 w-7 text-white transition-all duration-300 ease-out opacity-0 scale-75 rotate-90 dark:opacity-100 dark:scale-100 dark:rotate-0"
-              viewBox="0 -960 960 960"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"
-              />
-            </svg>
-          </button>
-        </div>
-        <button
-          id="menu-toggle"
-          class="md:hidden p-2 rounded-lg text-gray-900 dark:text-text-light hover:bg-gray-200 dark:hover:bg-secondary-dark transition duration-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button>
-      </nav>
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 bg-gray-100 dark:bg-secondary-dark rounded-b-lg"
-      >
         <a
           href="#skills"
-          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light border-b border-gray-300 dark:border-primary-dark/50"
-          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
-          >Skills</a
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[90px]"
         >
+          <div
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+          >
+            Skills
+          </div>
+          <div class="absolute right-2.5">
+            <i class="fa-solid text-[20px] fa-wrench"></i>
+          </div>
+        </a>
         <a
           href="#projects"
-          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light border-b border-gray-300 dark:border-primary-dark/50"
-          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
-          >Projects</a
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[110px]"
         >
+          <div
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+          >
+            Projects
+          </div>
+          <div class="absolute right-2.5">
+            <i class="fa-solid text-[20px] fa-folder"></i>
+          </div>
+        </a>
         <a
-          href="#achievements"
-          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light border-b border-gray-300 dark:border-primary-dark/50"
-          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
-          >Achievements</a
+          href="#achivements"
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[150px]"
         >
+          <div
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+          >
+            Achivements
+          </div>
+          <div class="absolute right-2.5">
+            <i class="fa-solid text-[20px] fa-trophy"></i>
+          </div>
+        </a>
         <a
           href="#contact"
-          class="block py-2 text-gray-800 dark:text-text-light hover:text-accent-light"
-          onclick="document.getElementById('mobile-menu').classList.add('hidden')"
-          >Contact</a
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[110px]"
         >
-      </div>
-    </header>
-
-    <main>
-      <section
-        id="hero"
-        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-36 text-center"
-      >
-        <div class="max-w-4xl mx-auto">
-          <p class="text-xl text-accent font-semibold mb-3">
-            Hello, I'm Kimsouheng Ngov
-          </p>
-          <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-            <span class="text-gray-900 dark:text-text-light"></span>
-            <span id="typing-text" class="text-accent-light"></span>
-          </h1>
-          <p
-            class="text-xl md:text-2xl text-gray-600 dark:text-text-muted-dark mb-10 max-w-2xl mx-auto"
-          >
-            A Third-Year Computer Science student at **Norton University**
-            focused on building reliable software solutions and engaging user
-            experiences. I leverage **Figma**, **C++**, and modern front-end
-            frameworks.
-          </p>
-          <div class="flex justify-center space-x-6 mb-10">
-            <a
-              href="#"
-              class="text-3xl text-gray-500 dark:text-text-muted-dark hover:text-accent transition duration-300 transform hover:scale-110"
-              title="Facebook"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-facebook"
-              >
-                <path
-                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="text-3xl text-gray-500 dark:text-text-muted-dark hover:text-accent transition duration-300 transform hover:scale-110"
-              title="GitHub"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-github"
-              >
-                <path
-                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3-1 6-2.2 6-5.5.08-1.7-.2-3.4-1.3-4.9.22-.76.31-1.44 0-2-2.7.35-4.3 1.25-5.3.7-.6-1-1.2-2.5-1.4-3.5h-2c-.2.5-1 2-1.4 3.5-1 .5-2.6-.35-5.3-.7-.36.56-.63 1.24-.6 2-.11.45-.48 1.07-.36 1.77-1.1 1.5-1.4 3.2-1.3 4.9 0 3.3 3 4.5 6 5.5-.39.49-.68 1.05-.75 1.7-1.45.64-2.8 1-3.8 1-.5 0-1.5.2-1.7.5-.15.36-.58.5-1 .5H3"
-                />
-                <path
-                  d="M12 21.5c-4 0-8-3-8-8 0-4 4-8 8-8s8 4 8 8c0 5-4 8-8 8z"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="text-3xl text-gray-500 dark:text-text-muted-dark hover:text-accent transition duration-300 transform hover:scale-110"
-              title="TikTok/Other Link"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-link"
-              >
-                <path
-                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
-                />
-                <path
-                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-                />
-              </svg>
-            </a>
-          </div>
-          <a
-            href="#projects"
-            class="inline-block px-8 py-4 bg-accent hover:bg-accent-light text-text-light font-bold text-lg rounded-xl shadow-lg transform transition duration-300 hover:scale-[1.03]"
-          >
-            View My Featured Work
-          </a>
-        </div>
-      </section>
-
-      <section id="skills" class="py-20 bg-gray-100 dark:bg-secondary-dark">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="text-4xl container font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 inline-block mx-auto text-gray-900 dark:text-text-light"
-          >
-            Technical Skills
-          </h2>
-
-          <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div
-              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl dark:shadow-2xl border border-accent/30"
-            >
-              <h3 class="text-2xl font-semibold mb-4 text-accent">
-                Core Development
-              </h3>
-              <div class="flex flex-wrap gap-4">
-                <span
-                  class="skill-tag bg-indigo-100 text-indigo-800 dark:bg-indigo-500/20 dark:text-indigo-300"
-                  >C++</span
-                >
-                <span
-                  class="skill-tag bg-yellow-100 text-yellow-800 dark:bg-yellow-500/20 dark:text-yellow-300"
-                  >JavaScript</span
-                >
-                <span
-                  class="skill-tag bg-blue-100 text-blue-800 dark:bg-blue-500/20 dark:text-blue-300"
-                  >HTML5</span
-                >
-                <span
-                  class="skill-tag bg-pink-100 text-pink-800 dark:bg-pink-500/20 dark:text-pink-300"
-                  >CSS3</span
-                >
-                <span
-                  class="skill-tag bg-cyan-100 text-cyan-800 dark:bg-cyan-500/20 dark:text-cyan-300"
-                  >Tailwind CSS</span
-                >
-                <span
-                  class="skill-tag bg-purple-100 text-purple-800 dark:bg-purple-500/20 dark:text-purple-300"
-                  >Bootstrap</span
-                >
-              </div>
-            </div>
-
-            <div
-              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl dark:shadow-2xl border border-accent/30"
-            >
-              <h3 class="text-2xl font-semibold mb-4 text-accent">
-                Design & Research Focus
-              </h3>
-              <div class="flex flex-wrap gap-4">
-                <span
-                  class="skill-tag bg-orange-100 text-orange-800 dark:bg-orange-500/20 dark:text-orange-300"
-                  >Figma (Design)</span
-                >
-                <span
-                  class="skill-tag bg-sky-100 text-sky-800 dark:bg-sky-500/20 dark:text-sky-300"
-                  >TypeScript (Research)</span
-                >
-                <span
-                  class="skill-tag bg-green-100 text-green-800 dark:bg-green-500/20 dark:text-green-300"
-                  >React JS (Research)</span
-                >
-                <span
-                  class="skill-tag bg-red-100 text-red-800 dark:bg-red-500/20 dark:text-red-300"
-                  >Java (Research)</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="py-20">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="text-4xl container font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 inline-block mx-auto text-gray-900 dark:text-text-light"
-          >
-            Featured Projects
-          </h2>
-
           <div
-            class="max-w-3xl mx-auto p-8 bg-white dark:bg-secondary-dark rounded-xl shadow-xl dark:shadow-2xl border border-accent/40 hover:shadow-accent/50 transition duration-300"
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
           >
-            <h3 class="text-3xl font-bold text-accent mb-3">
-              Responsive UX/UI Concept Platform
-            </h3>
-            <p class="text-lg text-gray-600 dark:text-text-muted-dark mb-4">
-              A project developed during my course at ISTAD.
-            </p>
-
-            <div class="bg-gray-200 dark:bg-primary-dark p-4 rounded-lg mb-4">
-              <p class="font-medium text-gray-700 dark:text-text-light mb-2">
-                Key Achievement:
-              </p>
-              <p class="text-2xl font-extrabold text-gray-900 dark:text-white">
-                🏆 Top 3 Project at ISTAD
-              </p>
-            </div>
-
-            <p class="text-gray-700 dark:text-text-muted-dark mb-4">
-              This project involved end-to-end development, from initial design
-              concepts in **Figma** to a fully responsive implementation using
-              **HTML, CSS, and JavaScript**. The primary focus was creating an
-              intuitive user experience and demonstrating strong foundational
-              skills in front-end development.
-            </p>
-
-            <div class="flex flex-wrap gap-3 mt-4">
-              <span class="project-tech-tag">HTML5</span>
-              <span class="project-tech-tag">CSS3</span>
-              <span class="project-tech-tag">JavaScript</span>
-              <span class="project-tech-tag">Figma</span>
-            </div>
-
-            <div class="mt-6 flex gap-4">
-              <a
-                href="#"
-                class="px-6 py-3 bg-accent/90 hover:bg-accent text-text-light font-semibold rounded-lg transition duration-300 shadow-md"
-                >View Demo (Mock Link)</a
-              >
-              <a
-                href="#"
-                class="px-6 py-3 border border-gray-400 dark:border-text-muted-dark text-gray-700 dark:text-text-muted-dark hover:border-accent hover:text-accent font-semibold rounded-lg transition duration-300"
-                >GitHub (Mock Link)</a
-              >
-            </div>
+            Contact
           </div>
-        </div>
-      </section>
-
-      <section
-        id="achievements"
-        class="py-20 bg-gray-100 dark:bg-secondary-dark"
-      >
-        <div class="container  mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="text-4xl font-bold container text-center mb-12 border-b-2 border-accent/50 pb-2 inline-block mx-auto text-gray-900 dark:text-text-light"
-          >
-            Academic & Technical Recognition
-          </h2>
-
-          <div class="max-w-4xl mx-auto space-y-6">
-            <div
-              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl flex items-start space-x-4 border-l-4 border-yellow-500"
-            >
-              <span class="text-3xl text-yellow-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M10 14a3 3 0 100-6 3 3 0 000 6z" />
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 2a8 8 0 100 16 8 8 0 000-16zm-7 8a7 7 0 1114 0 7 7 0 01-14 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <div>
-                <p
-                  class="text-xl font-semibold text-gray-900 dark:text-text-light"
-                >
-                  Best Performance Student
-                </p>
-                <p class="text-gray-600 dark:text-text-muted-dark">
-                  Awarded **Two Certificates** from ISTAD for demonstrating
-                  outstanding commitment and skill execution throughout the
-                  course period.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl flex items-start space-x-4 border-l-4 border-green-500"
-            >
-              <span class="text-3xl text-green-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <div>
-                <p
-                  class="text-xl font-semibold text-gray-900 dark:text-text-light"
-                >
-                  Full Stack Foundation Course Completion
-                </p>
-                <p class="text-gray-600 dark:text-text-muted-dark">
-                  ISTAD Certificate of completion for the comprehensive **HTML,
-                  CSS, and JavaScript** course.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="p-6 bg-white dark:bg-primary-dark rounded-xl shadow-xl flex items-start space-x-4 border-l-4 border-red-500"
-            >
-              <span class="text-3xl text-red-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M7 6a3 3 0 016 0V7a1 1 0 11-2 0V6a1 1 0 00-2 0v1a1 1 0 11-2 0V6zM5.555 10A18.833 18.833 0 0110 8.5a18.833 18.833 0 014.445 1.5.75.75 0 01-.5 1.35C12.592 10.638 11.3 10 10 10s-2.592.638-3.945 1.35a.75.75 0 01-.5-1.35zM3.468 13.5a19.467 19.467 0 0013.064 0 .75.75 0 01-.5 1.35c-3.134-1.688-6.104-1.92-9.064 0a.75.75 0 01-.5-1.35zM.75 16.5a20.071 20.071 0 0118.5 0 .75.75 0 01-.5 1.35C15.825 16.738 13.067 17 10 17s-5.825-.262-8.25-1.15a.75.75 0 01-.5-1.35z"
-                  />
-                </svg>
-              </span>
-              <div>
-                <p
-                  class="text-xl font-semibold text-gray-900 dark:text-text-light"
-                >
-                  English Language Proficiency
-                </p>
-                <p class="text-gray-600 dark:text-text-muted-dark">
-                  Received **One Medal and One Certificate** from PUC School,
-                  demonstrating strong communication skills crucial for teamwork
-                  and documentation.
-                </p>
-              </div>
-            </div>
+          <div class="absolute right-2.5">
+            <i class="fa-solid text-[20px] fa-phone"></i>
           </div>
-        </div>
-      </section>
-
-      <section id="contact" class="py-20">
-        <div
-          class="container  px-4 sm:px-6 lg:px-8 text-center max-w-2xl mx-auto"
+        </a>
+      </nav>
+    </header>
+    <main class="max-md:mx-4">
+      <section class="flex flex-col items-center">
+        <section
+          id="home"
+          class="flex items-center max-md:w-fit lg:flex-col max-md:flex-col max-lg:flex-row text-white gap-5 bg-gradient-to-b from-primary to to-black/90 rounded-[18px] lg:w-fit mt-8 p-6"
         >
-          <h2
-            class="text-4xl font-bold mb-4 text-gray-900 dark:text-text-light"
+          <img
+            src="./img/photo_2025-11-05_19-05-30.jpg"
+            alt="souheng's pictue"
+            class="lg:w-[330px] max-md:w-[330px] max-md:h-[330px] lg:h-[330px] max-lg:w-[200px] max-lg:h-[200px] rounded-[18px]"
+          />
+          <div
+            class="flex flex-col lg:items-center max-md:justify-center max-md:items-center lg:justify-center lg:gap-4 max-lg:gap-6 max-md:gap-4"
           >
-            Let's Connect & Build
-          </h2>
-          <p class="text-xl text-gray-600 dark:text-text-muted-dark mb-8">
-            I'm currently seeking opportunities for internships and
-            collaborative projects in software development and UI/UX design.
-            Feel free to reach out!
-          </p>
+            <p class="text-2xl max-md:text-2xl font-extrabold">
+              KIMSOUHENG NGOV
+            </p>
+            <p
+              class="lg:w-[300px] text-gray-200 max-md:w-[300px] max-md:text-center lg:text-center"
+            >
+              A front-end developer who builds modern and creative web
+              solutions.
+            </p>
+            <div class="text-[22px] z-0 flex gap-3">
+              <ion-icon name="logo-github"></ion-icon>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-tiktok"></ion-icon>
+              <ion-icon name="mail"></ion-icon>
+              <ion-icon name="paper-plane"></ion-icon>
+            </div>
+          </div>
+        </section>
+        <h2 class="font-extrabold py-6 text-[25px] text-center text-primary">
+          <span id="typing-text"></span>
+          <span class="blinking-cursor">|</span>
+        </h2>
+        <p class="text-center px-3 text-gray-900 w-[390px]">
+          A<span class="font-bold"> Frontend Developer</span> and a Figma
+          <span class="font-bold">Designer</span>, <br />
+          I'm passionate about building beautiful, easy-to-use apps by making
+          sure the final code looks exactly like the design.
+        </p>
+      </section>
 
-          <a
-            href="mailto:your.email@example.com"
-            class="inline-block px-8 py-4 bg-accent hover:bg-accent-light text-text-light font-bold text-lg rounded-xl shadow-xl transition duration-300 transform hover:translate-y-[-2px] hover:shadow-2xl"
-          >
-            <span class="inline-flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 mr-3"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
+      <section id="skills">
+        <h2 class="font-extrabold py-6 text-[25px] text-center text-primary">
+          TECHNOLOGIES
+        </h2>
+        <!-- autoslide -->
+        <div class="md:w-[390px] mx-auto">
+          <!-- Top Row -->
+          <div class="relative overflow-hidden group rounded-[10px]">
+            <div
+              class="flex w-max animate-scroll-left group-hover:[animation-play-state:paused] gap-4"
+            >
+              <template id="top-images">
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/html.webp"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 0 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/css.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/boostrap.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/Tailwind_CSS_Logo.svg.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/figma.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/git.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/github.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/js.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/Vue.js_Logo_2.svg.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+                <div
+                  class="relative group/card hover:scale-105 transition-transform duration-500 cursor-pointer"
+                >
+                  <img
+                    src="img/React-icon.svg.png"
+                    class="w-18 h-18 object-contain rounded-[10px]"
+                  />
+                  <div
+                    class="absolute inset-0 bg-opacity-30 rounded-[10px] opacity-0 group-hover/card:opacity-100 transition duration-300 flex items-center justify-center"
+                  >
+                    <span class="text-white text-lg font-semibold"></span>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+          <!-- Lightbox Modal -->
+        </div>
+        <!-- card-skills -->
+        <div
+          class="text-gray-900 py-6 max-w-sm mx-auto flex flex-col justify-between"
+        >
+          <div class="header">
+            <h2 class="text-xl text-center font-extrabold mb-1 text-primary">
+              MY DIGITAL CRAFT
+            </h2>
+            <p class="text-sm text-center text-gray-500 mb-6">
+              Front-End Development & UI/UX Design
+            </p>
+          </div>
+
+          <div class="main">
+            <div class="skill-group">
+              <h3
+                class="text-[18px] text-gray-800 uppercase text-center font-semibold border-b-2 border-gray-700 pb-2 mb-4"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8V6a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+                Web development
+              </h3>
+
+              <div class="skill-item text-center mb-5">
+                <span class="block font-medium mb-1">HTML & CSS</span>
+                <div class="h-2 bg-gray-700 rounded-[2px] overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-purple-600"
+                    style="width: 95%"
+                  ></div>
+                </div>
+                <span class="text-xs font-semibold text-primary mt-1 block"
+                  >95%</span
+                >
+              </div>
+              <div class="skill-item text-center mb-5">
+                <span class="block font-medium mb-1">Boostrap & Tailwind</span>
+                <div class="h-2 bg-gray-700 rounded-[2px] overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-purple-600"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <span class="text-xs font-semibold text-primary mt-1 block"
+                  >90%</span
+                >
+              </div>
+              <div class="skill-item text-center mb-5">
+                <span class="block font-medium mb-1">JavaScript (ES6+)</span>
+                <div class="h-2 bg-gray-700 rounded-[2px] overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-purple-600"
+                    style="width: 75%"
+                  ></div>
+                </div>
+                <span class="text-xs font-semibold text-primary mt-1 block"
+                  >75%</span
+                >
+              </div>
+              <div class="skill-item text-center mb-5">
+                <span class="block font-medium mb-1">VUE & React.Js</span>
+                <div class="h-2 bg-gray-700 rounded-[2px] overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-purple-600"
+                    style="width: 25%"
+                  ></div>
+                </div>
+                <span class="text-xs font-semibold text-primary mt-1 block"
+                  >25%</span
+                >
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3
+                class="text-[18px] text-gray-800 text-center font-semibold uppercase border-b-2 border-gray-700 pb-2 mb-4"
+              >
+                Design & Prototyping
+              </h3>
+
+              <div class="skill-item text-center mb-5">
+                <span class="block font-medium mb-1">Figma</span>
+                <div class="h-2 bg-gray-700 rounded-[2px] overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-purple-600"
+                    style="width: 70%"
+                  ></div>
+                </div>
+                <span class="text-xs font-semibold text-primary mt-1 block"
+                  >70%</span
+                >
+              </div>
+
+              <div class="skill-item text-center">
+                <span class="block font-medium mb-1">UI/UX Principles</span>
+                <div class="h-2 bg-gray-700 rounded-[2px] overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-purple-600"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <span class="text-xs font-semibold text-primary mt-1 block"
+                  >90%</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- <div
+            class="project-cta text-center pt-6 border-t border-gray-700 mt-auto"
+          >
+            <p class="mb-4 text-sm text-gray-500">
+              Check out my latest projects!
+            </p>
+            <button
+              class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300 transform hover:scale-105"
+            >
+              View Portfolio
+            </button>
+          </div> -->
+        </div>
+      </section>
+      <section id="projects">
+        <div
+          class="skill-card bg-white rounded-[15px] mb-6 p-6 max-w-sm mx-auto flex flex-col"
+        >
+          <h2 class="font-extrabold text-xl mb-4 text-center text-primary">
+            RECENT PROJECTS
+          </h2>
+          <div class="projects-area h-[500px] flex-grow overflow-y-auto pr-2">
+            <div
+              class="flex items-center gap-3 p-3 mb-4 rounded-lg border-2 border-primary hover:bg-gradient-to-r hover:shadow-[1px_1px_2px] hover:shadow-primary transition duration-200 cursor-pointer"
+            >
+              <div
+                class="project-logo flex-shrink-0 w-20 h-20 rounded-full overflow-hidden"
+              >
+                <img
+                  src="./img/Hengfavicon.jpg"
+                  alt=" Logo"
+                  class="w-full h-full object-cover"
                 />
-              </svg>
-              Get in Touch
-            </span>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div>
+                  <p class="font-medium text-primary leading-tight">
+                    SHOP WITH HENG
+                  </p>
+                  <p class="text-[10px] text-gray-800 leading-tight">
+                    Modern E-commerce Platform
+                  </p>
+                </div>
+                <p class="text-[10px] text-gray-600 mt-1">
+                  FIGMA, HTML, TAILWIND CSS , JS
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 mb-4 rounded-lg border-2 border-primary hover:bg-gradient-to-r hover:shadow-[1px_1px_2px] hover:shadow-primary transition duration-200 cursor-pointer"
+            >
+              <div
+                class="project-logo flex-shrink-0 w-20 h-20 rounded-full overflow-hidden"
+              >
+                <img
+                  src="./img/derleng.jpg"
+                  alt=" Logo"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div>
+                  <p class="font-medium text-primary leading-tight">DER LENG</p>
+                  <p class="text-[10px] text-gray-800 leading-tight">
+                    Modern Tourism Platform
+                  </p>
+                </div>
+                <p class="text-[10px] text-gray-600 mt-1">
+                  FIGMA, HTML, TAILWIND CSS , JS
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 mb-4 rounded-lg border-2 border-primary hover:bg-gradient-to-r hover:shadow-[1px_1px_2px] hover:shadow-primary transition duration-200 cursor-pointer"
+            >
+              <div
+                class="project-logo flex-shrink-0 w-20 h-20 rounded-full overflow-hidden"
+              >
+                <img
+                  src="./img/LATTE.jpg"
+                  alt=" Logo"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div>
+                  <p class="font-medium text-primary leading-tight">DER LENG</p>
+                  <p class="text-[10px] text-gray-800 leading-tight">
+                    Modern Tourism Platform
+                  </p>
+                </div>
+                <p class="text-[10px] text-gray-600 mt-1">
+                  FIGMA, HTML, TAILWIND CSS , JS
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 p-3 mb-4 rounded-lg border-2 border-primary hover:bg-gradient-to-r hover:shadow-[1px_1px_2px] hover:shadow-primary transition duration-200 cursor-pointer"
+            >
+              <div
+                class="project-logo flex-shrink-0 w-20 h-20 rounded-full overflow-hidden"
+              >
+                <img
+                  src="./img/latteM.jpg"
+                  alt=" Logo"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div>
+                  <p class="font-medium text-primary leading-tight">LATTE-M</p>
+                  <p class="text-[10px] text-gray-800 leading-tight">
+                    Modern E-commerce Platform
+                  </p>
+                </div>
+                <p class="text-[10px] text-gray-600 mt-1">
+                  HTML, CSS Grid, Vanilla JS
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-3 p-3 mb-4 rounded-lg border-2 border-primary hover:bg-gradient-to-r hover:shadow-[1px_1px_2px] hover:shadow-primary transition duration-200 cursor-pointer"
+            >
+              <div
+                class="project-logo flex-shrink-0 w-20 h-20 rounded-full overflow-hidden"
+              >
+                <img
+                  src="./img/miniLogoFigma.jpg"
+                  alt=" Logo"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div>
+                  <p class="font-medium text-primary leading-tight">
+                    zandokh.com/index
+                  </p>
+                  <p class="text-[10px] text-gray-800 leading-tight">
+                    have done some UI
+                  </p>
+                </div>
+                <p class="text-[10px] text-gray-600 mt-1">FIGMA</p>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="text-center hover:text-primary text-sm text-gray-500 pt-2 pb-1"
+          >
+            View all 15+ projects on GitHub.
           </a>
         </div>
       </section>
     </main>
-
-    <footer
-      class="bg-gray-200 dark:bg-primary-dark border-t border-gray-300 dark:border-secondary-dark mt-10"
-    >
-      <div
-        class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-600 dark:text-text-muted-dark text-sm"
-      >
-        <p>&copy; 2025 Kimsouheng Ngov. Built with HTML & Tailwind CSS.</p>
-        <p class="mt-1">
-          Third-Year Computer Science Student | Norton University
-        </p>
-      </div>
-    </footer>
-
-    <script src="js/index.js"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class", // Enable class-based dark mode
-        theme: {
-          extend: {
-            colors: {
-              // Custom Dark Mode Colors (used with dark: prefix)
-              "primary-dark": "#111827", // Dark gray/black background
-              "secondary-dark": "#1F2937", // Slightly lighter card background
-
-              // Custom Light Mode Colors (default, used without prefix)
-              "primary-light": "#FFFFFF",
-              "secondary-light": "#F3F4F6",
-
-              accent: "#4F46E5", // Indigo for highlights
-              "accent-light": "#6366F1",
-              "text-dark": "#1F2937",
-              "text-light": "#F9FAFB",
-              "text-muted-dark": "#D1D5DB", // For dark mode
-              "text-muted-light": "#6B7280", // For light mode
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
+    <script src="./js/infinitslide.js"></script>
+    <script src="./js/typingtext.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
