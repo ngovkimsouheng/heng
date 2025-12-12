@@ -96,14 +96,15 @@
     </style>
   </head>
   <body class="bg-gradient-to-r from-background to-[#D8F0FD] font-primary">
-    <header class="sticky z-99 top-4">
+    <header class="fixed w-full flex justify-center z-99 bottom-10">
       <nav class="bg-white w-fit p-1 rounded-[14px] mx-auto flex mt-8">
         <a
           href="#home"
-          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[100px]"
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary focus:font-bold hover:text-white active:bg-primary active:text-white font-medium text-primary transition-all duration-400 hover:w-[100px] active:w-[100px] focus:w-[100px] focus:text-white focus:bg-primary"
         >
           <div
-            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+            id="act"
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100 group-active:-translate-x-3 group-active:opacity-100 group-focus:-translate-x-3 group-focus:opacity-100"
           >
             Home
           </div>
@@ -113,23 +114,25 @@
         </a>
         <a
           href="#skills"
-          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[90px]"
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white focus:font-bold active:bg-primary active:text-white font-medium text-primary transition-all duration-400 hover:w-[90px] active:w-[90px] focus:w-[90px] focus:text-white focus:bg-primary"
         >
           <div
-            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+            id="act"
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100 group-active:-translate-x-3 group-active:opacity-100 group-focus:-translate-x-3 group-focus:opacity-100"
           >
             Skills
           </div>
           <div class="absolute right-2.5">
-            <i class="fa-solid text-[20px] fa-wrench"></i>
+            <i class="fa-solid text-[20px] fa-gears"></i>
           </div>
         </a>
         <a
           href="#projects"
-          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[110px]"
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] focus:font-bold hover:bg-primary hover:text-white active:bg-primary active:text-white font-medium text-primary transition-all duration-400 hover:w-[110px] active:w-[110px] focus:w-[110px] focus:text-white focus:bg-primary"
         >
           <div
-            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+            id="act"
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100 group-active:-translate-x-3 group-active:opacity-100 group-focus:-translate-x-3 group-focus:opacity-100"
           >
             Projects
           </div>
@@ -138,29 +141,17 @@
           </div>
         </a>
         <a
-          href="#achivements"
-          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[150px]"
+          href="#achivement"
+          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white active:bg-primary active:text-white font-medium focus:font-bold text-primary transition-all duration-400 hover:w-[150px] active:w-[150px] focus:w-[150px] focus:text-white focus:bg-primary"
         >
           <div
-            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
+            id="act"
+            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100 group-active:-translate-x-3 group-active:opacity-100 group-focus:-translate-x-3 group-focus:opacity-100"
           >
             Achivements
           </div>
           <div class="absolute right-2.5">
             <i class="fa-solid text-[20px] fa-trophy"></i>
-          </div>
-        </a>
-        <a
-          href="#contact"
-          class="group relative gap-1 flex h-10 w-10 items-center justify-center overflow-hidden rounded-[14px] hover:bg-primary hover:text-white font-medium text-primary transition-all duration-400 hover:w-[110px]"
-        >
-          <div
-            class="flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100"
-          >
-            Contact
-          </div>
-          <div class="absolute right-2.5">
-            <i class="fa-solid text-[20px] fa-phone"></i>
           </div>
         </a>
       </nav>
@@ -208,7 +199,6 @@
           sure the final code looks exactly like the design.
         </p>
       </section>
-
       <section id="skills">
         <h2 class="font-extrabold py-6 text-[25px] text-center text-primary">
           TECHNOLOGIES
@@ -526,7 +516,10 @@
                 <div>
                   <p class="font-medium text-primary leading-tight">DER LENG</p>
                   <p class="text-[10px] text-gray-800 leading-tight">
-                    Modern Tourism Platform
+                    Modern Tourism Platform <br />
+                    <span class="text-[8px] text-gray-500"
+                      >(Project Top team at ISTAD)</span
+                    >
                   </p>
                 </div>
                 <p class="text-[10px] text-gray-600 mt-1">
@@ -548,9 +541,9 @@
               </div>
               <div class="flex flex-col gap-2">
                 <div>
-                  <p class="font-medium text-primary leading-tight">DER LENG</p>
+                  <p class="font-medium text-primary leading-tight">COFFEE</p>
                   <p class="text-[10px] text-gray-800 leading-tight">
-                    Modern Tourism Platform
+                    coffee website
                   </p>
                 </div>
                 <p class="text-[10px] text-gray-600 mt-1">
@@ -616,9 +609,9 @@
           </a>
         </div>
       </section>
-    </main>  
+    </main>
     <script src="./js/infinitslide.js"></script>
-    <script src="./js/typingtext.js"></script> 
+    <script src="./js/typingtext.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
